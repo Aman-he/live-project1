@@ -7,6 +7,7 @@ void display()
 	{
 		printf("学生学号 \t学生姓名 \t进校时间   \t离校时间   \n");
 		printf("--------------------------------------------------------------------\n");
+//打印信息
 		for (i = 0; i<n; i++)
 		{
 			printf("%s \t%s \t%s   \t%s   \n", stu[i].StudentId, stu[i].StudentName, stu[i].StudentEnter, stu[i].StudentLeave);
