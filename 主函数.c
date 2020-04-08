@@ -1,21 +1,21 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>	/*I/Oº¯Êı*/
-#include<stdlib.h>	/*ÆäËüËµÃ÷*/
-#include<string.h>	/*×Ö·û´®º¯Êı*/
+#include<stdio.h>	/*I/Oå‡½æ•°*/
+#include<stdlib.h>	/*å…¶å®ƒè¯´æ˜*/
+#include<string.h>	/*å­—ç¬¦ä¸²å‡½æ•°*/
 
-#define LEN 15		/* Ñ§ºÅºÍĞÕÃû×î´ó×Ö·ûÊı,Êµ¼ÊÇë¸ü¸Ä*/
-#define N 50		/* ×î´óÑ§ÉúÈËÊı,Êµ¼ÊÇë¸ü¸Ä*/
+#define LEN 15		/* å­¦å·å’Œå§“åæœ€å¤§å­—ç¬¦æ•°,å®é™…è¯·æ›´æ”¹*/
+#define N 50		/* æœ€å¤§å­¦ç”Ÿäººæ•°,å®é™…è¯·æ›´æ”¹*/
 
-int k = 1, n = 0, m = 0;/* n´ú±íµ±Ç°¼ÇÂ¼µÄÑ§ÉúÈËÊı*/
+int k = 1, n = 0, m = 0;/* nä»£è¡¨å½“å‰è®°å½•çš„å­¦ç”Ÿäººæ•°*/
 
-//º¯ÊıÉùÃ÷
+//å‡½æ•°å£°æ˜
 void seek();
 void insert();
 void display();
 void save();
 void menu();
 
-//½á¹¹Ìå±£´æÑ§ÉúĞÅÏ¢
+//ç»“æ„ä½“ä¿å­˜å­¦ç”Ÿä¿¡æ¯
 struct student{
 	char StudentId[LEN+1];
 	char StudentName[LEN+1];
@@ -24,7 +24,7 @@ struct student{
 	float score[3];
 }stu[N];
 
-//Ö÷º¯Êı
+//ä¸»å‡½æ•°
 int main()
 {
 	while (k)
@@ -34,3 +34,4 @@ int main()
 	system("pause");
 	return 0;
 }
+/
