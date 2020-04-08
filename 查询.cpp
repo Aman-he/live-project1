@@ -22,9 +22,9 @@ void seek() /*查找*/
 			if (strcmp(s1,stu[i].StudentId) == 0)
 			{
 				flag = 1;
-				printf("学生学号\t学生姓名\n");
+				printf("学生学号\t学生姓名\t进入时间\t离开时间\n");
 				printf("--------------------------------------------------------------------\n");
-				printf("%s\t%s\t%f\t%f\n", stu[i].StudentId,stu[i].StudentName);
+				printf("%s\t%s\t%f\t%f\n", stu[i].StudentId,stu[i].StudentName,stu[i].StudentEnter,stu[i].StudentLeave);
 			}
 			if (0 == flag)
 				printf("该学号不存在！\n"); break;
@@ -35,9 +35,9 @@ void seek() /*查找*/
 			if (strcmp(stu[i].StudentName, s1) == 0)
 			{
 				flag = 1;
-				printf("学生学号\t学生姓名\n");
+				printf("学生学号\t学生姓名\t进入时间\t离开时间\n");
 				printf("--------------------------------------------------------------------\n");
-				printf("%s\t%s\t%f\t%f\n", stu[i].StudentId, stu[i].StudentName);
+				printf("%s\t%s\t%f\t%f\n", stu[i].StudentId, stu[i].StudentName,stu[i].StudentEnter, stu[i].StudentLeave);
 			}
 			if (0 == flag)
 				printf("该姓名不存在！\n"); break;
