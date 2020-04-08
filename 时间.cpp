@@ -18,9 +18,9 @@ void name()
 int main ()
 {
     time_now();
-    printf("用户已进入校园\n");
+    printf("鐢ㄦ埛宸茶繘鍏ユ牎鍥璡n");
 	printf("----------------------------------\n");
-	printf("用户已退出校园\n");
+	printf("鐢ㄦ埛宸查��鍑烘牎鍥璡n");
 	time_now();
 }
-
+//
