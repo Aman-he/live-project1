@@ -19,9 +19,8 @@ void menu();
 struct student{
 	char StudentId[LEN+1];
 	char StudentName[LEN+1];
-	int StudentAge;
-	char StudentSex;
-	float score[3];
+	char StudentEnter;
+	char StudentLeave;
 }stu[N];
 
 //主函数
@@ -34,4 +33,3 @@ int main()
 	system("pause");
 	return 0;
 }
-/
