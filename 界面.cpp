@@ -1,4 +1,4 @@
-void menu()/* 界面*/
+void menu()
 {
 	int num;
 	printf(" \n\n                    \n\n");
