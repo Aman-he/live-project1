@@ -1,4 +1,4 @@
-void sort()
+void sort()//sort_id
 {
 	int i, j, k, *p, *q, s;
 	char temp[LEN + 1], ctemp;
