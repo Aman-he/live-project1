@@ -28,6 +28,6 @@ void menu()/* 界面*/
 		k = 0; 
 		printf("即将退出程序!\n");
 		break;
-	default:printf("请在0-8之间选择\n");
+	default:printf("请在0-4之间选择\n");
 	}
 }
