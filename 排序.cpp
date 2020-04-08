@@ -1,4 +1,4 @@
-void sort()//∞¥—ß∫≈≈≈–Ú
+void sort()
 {
 	int i, j, k, *p, *q, s;
 	char temp[LEN + 1], ctemp;
