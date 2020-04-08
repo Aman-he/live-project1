@@ -1,4 +1,4 @@
-void menu()/* ΩÁ√Ê*/
+void menu()
 {
 	int num;
 	printf(" \n\n                    \n\n");
