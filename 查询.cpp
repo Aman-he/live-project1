@@ -29,7 +29,7 @@ void seek() /*查找*/
 			if (0 == flag)
 				printf("该学号不存在！\n"); break;
 		case 2:
-			printf("请输入要查询的学生的姓名:\n");
+			printf("请输入要查询的学生的姓名:\n");11
 			scanf("%s", s1);
 			for (i = 0; i<n; i++)
 			if (strcmp(stu[i].StudentName, s1) == 0)
