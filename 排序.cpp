@@ -1,4 +1,4 @@
-void sort()//╟╢я╖╨ееепР
+void sort()//б╟б╢ц▒б╖б╨ц┘ц┘ц┘ц░ц╡
 {
 	int i, j, k, *p, *q, s;
 	char temp[LEN + 1], ctemp;
