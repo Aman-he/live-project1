@@ -12,4 +12,3 @@ void save(){
 	fclose(fp);
 	system("pause");
 }
-/
