@@ -1,48 +1,48 @@
-//²éÕÒÑ§ÉúĞÅÏ¢
-void seek() /*²éÕÒ*/
+//æŸ¥æ‰¾å­¦ç”Ÿä¿¡æ¯
+void seek() /*æŸ¥æ‰¾*/
 {
 	int i, item, flag;
-	char s1[21]; /* ÒÔĞÕÃûºÍÑ§ºÅ×î³¤³¤¶È+1Îª×¼*/
+	char s1[21]; /* ä»¥å§“åå’Œå­¦å·æœ€é•¿é•¿åº¦+1ä¸ºå‡†*/
 	printf("------------------\n");
-	printf("-----1.°´Ñ§ºÅ²éÑ¯-----\n");
-	printf("-----2.°´ĞÕÃû²éÑ¯-----\n");
-	printf("-----3.ÍË³ö±¾²Ëµ¥-----\n");
+	printf("-----1.æŒ‰å­¦å·æŸ¥è¯¢-----\n");
+	printf("-----2.æŒ‰å§“åæŸ¥è¯¢-----\n");
+	printf("-----3.é€€å‡ºæœ¬èœå•-----\n");
 	printf("------------------\n");
 	while (1)
 	{
-		printf("ÇëÑ¡Ôñ×Ó²Ëµ¥±àºÅ:");
+		printf("è¯·é€‰æ‹©å­èœå•ç¼–å·:");
 		scanf("%d", &item);
 		flag = 0;
 		switch (item)
 		{
 		case 1:
-			printf("ÇëÊäÈëÒª²éÑ¯µÄÑ§ÉúµÄÑ§ºÅ:\n");
+			printf("è¯·è¾“å…¥è¦æŸ¥è¯¢çš„å­¦ç”Ÿçš„å­¦å·:\n");
 			scanf("%s", s1);
 			for (i = 0; i<n; i++)
 			if (strcmp(s1,stu[i].StudentId) == 0)
 			{
 				flag = 1;
-				printf("Ñ§ÉúÑ§ºÅ\tÑ§ÉúĞÕÃû\t½øÈëÊ±¼ä\tÀë¿ªÊ±¼ä\n");
+				printf("å­¦ç”Ÿå­¦å·\tå­¦ç”Ÿå§“å\n");
 				printf("--------------------------------------------------------------------\n");
-				printf("%s\t%s\t%f\t%f\n", stu[i].StudentId,stu[i].StudentName,stu[i].StudentEnter,stu[i].StudentLeave);
+				printf("%s\t%s\t%f\t%f\n", stu[i].StudentId,stu[i].StudentName);
 			}
 			if (0 == flag)
-				printf("¸ÃÑ§ºÅ²»´æÔÚ£¡\n"); break;
+				printf("è¯¥å­¦å·ä¸å­˜åœ¨ï¼\n"); break;
 		case 2:
-			printf("ÇëÊäÈëÒª²éÑ¯µÄÑ§ÉúµÄĞÕÃû:\n");
+			printf("è¯·è¾“å…¥è¦æŸ¥è¯¢çš„å­¦ç”Ÿçš„å§“å:\n");
 			scanf("%s", s1);
 			for (i = 0; i<n; i++)
 			if (strcmp(stu[i].StudentName, s1) == 0)
 			{
 				flag = 1;
-				printf("Ñ§ÉúÑ§ºÅ\tÑ§ÉúĞÕÃû\t½øÈëÊ±¼ä\tÀë¿ªÊ±¼ä\n");
+				printf("å­¦ç”Ÿå­¦å·\tå­¦ç”Ÿå§“å\n");
 				printf("--------------------------------------------------------------------\n");
-				printf("%s\t%s\t%f\t%f\n", stu[i].StudentId, stu[i].StudentName,stu[i].StudentEnter, stu[i].StudentLeave);
+				printf("%s\t%s\t%f\t%f\n", stu[i].StudentId, stu[i].StudentName);
 			}
 			if (0 == flag)
-				printf("¸ÃĞÕÃû²»´æÔÚ£¡\n"); break;
+				printf("è¯¥å§“åä¸å­˜åœ¨ï¼\n"); break;
 		case 3:return;
-		default:printf("ÇëÔÚ1-3Ö®¼äÑ¡Ôñ\n");
+		default:printf("è¯·åœ¨1-3ä¹‹é—´é€‰æ‹©\n");
 		}
 	}
 }
