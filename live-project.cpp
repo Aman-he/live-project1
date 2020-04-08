@@ -33,7 +33,7 @@ int main()
 	system("pause");
 	return 0;
 }
-//查找学生信息
+//查找学生信息37
 void seek() /*查找*/
 {
 	int i, item, flag;
@@ -98,7 +98,6 @@ void sort()
 			strcpy(stu[j - 1].StudentName, stu[j].StudentName);
 			strcpy(stu[j].StudentName, temp);
 			ctemp = stu[j - 1].StudentEnter;
-			stu[j - 1].StudentSex = stu[j].StudentEnter;
 			stu[j].StudentEnter = ctemp;
 			p = &stu[j - 1].StudentLeave;
 			q = &stu[j].StudentLeave;
@@ -197,7 +196,6 @@ void menu()/* 界面*/
 	scanf("%d", &num);
 	switch (num)
 	{
-
 	case 1:seek(); break;
 	case 2:insert(); break;
 	case 3:display(); break;
